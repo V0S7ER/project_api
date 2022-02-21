@@ -1,0 +1,3 @@
+create table achieves (id integer not null auto_increment, description varchar(255), level varchar(255), place varchar(255), status varchar(255), type varchar(255), weight integer not null, user_id integer, primary key (id));
+create table users (id integer not null auto_increment, email varchar(255), name varchar(255), password varchar(255), surname varchar(255), type varchar(255), primary key (id));
+alter table achieves add constraint FKd0b2qnrirkkmdkkttek6t00b8 foreign key (user_id) references users (id)
